@@ -69,7 +69,7 @@ export const Banner =()=>{
                 </div>}
               </TrackVisibility>
             </Col>
-            <Col xs={12} md={6} xl={5}>
+            <Col id="pageImg">
                <img src={Picture} alt="Header Img" />
 
             </Col>
