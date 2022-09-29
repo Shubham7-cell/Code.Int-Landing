@@ -2,15 +2,15 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
-import { ProjectCard } from "../components/ProjectCard.js";
+import { ProjectCard } from "./ProjectCard.js";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
 
-export const Projects = () => {
+export const Feedback = () => {
      
-    const projects = [
+    const feeds = [
         {
             title: "Business Startup",
             description: "Design & Development",
@@ -88,21 +88,21 @@ export const Projects = () => {
                 <Tab.Content id="wow slideInUp">
                   <Tab.Pane eventKey="first">
                     <Row>
-                      {projects.map((project, index) => {
+                      {feeds.map((project, index) => {
                         return <ProjectCard key={index} {...project} />;
                       })}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     <Row>
-                      {projects.map((project, index) => {
+                      {feeds.map((project, index) => {
                         return <ProjectCard key={index} {...project} />;
                       })}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
                     <Row>
-                      {projects.map((project, index) => {
+                      {feeds.map((project, index) => {
                         return <ProjectCard key={index} {...project} />;
                       })}
                     </Row>
